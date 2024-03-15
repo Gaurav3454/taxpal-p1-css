@@ -101,7 +101,7 @@ p{
     margin-left: auto; /* mx-auto */
   margin-right: auto; /* mx-auto */
   margin-top: 1.5rem; /* mt-6 */
-  max-width: 2xl; /* You need to define the actual value for max-width */
+   /* You need to define the actual value for max-width */
   font-size: 1.125rem; /* text-lg */
   letter-spacing: -0.025em; /* tracking-tight */
   text-align: center;
@@ -219,3 +219,181 @@ ul{
 }
 
 /* get stared section */
+.getStarted{
+    position: relative;
+    margin-top: 4.5rem;
+    background-image: url('images/background-call-to.jpg'); /* Replace 'your-image-url.jpg' with the URL of your image */
+    background-size: cover;
+    background-position: center;
+    height: 27rem;
+    color: white;
+
+}
+.getStarted p{
+    color: white;
+}
+.getStarted .lightBtn{
+    background-color: white; 
+    color: rgb(26, 26, 26); 
+    border: none; 
+    padding: 10px 20px; 
+    cursor: pointer;
+    border-radius: 40px;
+    margin-top: 40px;
+margin-left: 54rem;
+    font-size: 15px;
+
+}
+
+/* testimonial section  */
+.testimonials{
+    margin-left: auto; /* mx-auto */
+  margin-right: auto; /* mx-auto */
+  max-width: 80rem; /* max-w-7xl */
+  padding-left: 1rem; /* px-4 */
+  padding-right: 1rem; 
+}
+.testimonialHeading{
+margin-bottom: 10rem;
+}
+.testimonialHeading h2{
+    color: black;
+}
+.testimonials-list {
+    margin: auto;
+    margin-top: 4rem; /* Adjust as needed */
+    display: grid;
+    max-width: 80rem; /* Adjust as needed */
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5rem; /* Adjust as needed */
+    margin-bottom: 12rem;
+  }
+  
+  .testimonial {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; /* Adjust as needed */
+  }
+  
+  .testimonial-figure {
+    position: relative;
+    border-radius: 1rem; /* Adjust as needed */
+    background-color: #fff;
+    padding: 1.5rem; /* Adjust as needed */
+    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1), 0 0 0.5rem rgba(0, 0, 0, 0.05);
+  }
+  .quotes{
+    position: absolute;
+  }
+  
+  .testimonial-text {
+    position: relative;
+    font-size: 1.125rem; /* Adjust as needed */
+    line-height: 1.5; /* Adjust as needed */
+    color: #374151; /* Adjust as needed */
+  }
+  
+  .testimonial-author {
+    position: relative;
+    margin-top: 1.5rem; /* Adjust as needed */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #e5e7eb; /* Adjust as needed */
+    padding-top: 1.5rem; /* Adjust as needed */
+  }
+  
+  .author-info {
+    font-family: 'Inter', sans-serif; /* Adjust as needed */
+  }
+  
+  .author-name {
+    font-size: 1rem; /* Adjust as needed */
+    color: #374151; /* Adjust as needed */
+  }
+  
+  .author-role {
+    font-size: 0.875rem; /* Adjust as needed */
+    color: #6b7280; /* Adjust as needed */
+  }
+  
+  .author-image img {
+    width: 3.5rem; /* Adjust as needed */
+    height: 3.5rem; /* Adjust as needed */
+    border-radius: 50%; /* Adjust as needed */
+    overflow: hidden;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  /* Media query for responsiveness */
+@media screen and (max-width: 768px) {
+    header {
+      padding: 0 1rem; /* Adjust padding for smaller screens */
+    }
+  
+    nav {
+      flex-direction: column; /* Stack navigation items vertically */
+      align-items: center; /* Center align navigation items */
+      margin-top: 1rem; /* Adjust margin for smaller screens */
+    }
+  
+    main {
+      flex-direction: column; /* Stack main content vertically */
+      align-items: center; /* Center align main content */
+      margin-top: 3rem; /* Adjust margin for smaller screens */
+    }
+  
+    p {
+      font-size: 1rem; /* Adjust font size for smaller screens */
+      max-width: 90%; /* Adjust max-width for smaller screens */
+      margin-top: 1rem; /* Adjust margin for smaller screens */
+    }
+  
+    .headSpan img {
+      width: 100vw; /* Make the image responsive */
+      top: auto; /* Remove absolute positioning */
+      left: auto; /* Remove absolute positioning */
+      margin-bottom: 1rem; /* Add margin below the image */
+    }
+  
+    .heroBtn {
+      flex-direction: column; /* Stack buttons vertically */
+      align-items: center; /* Center align buttons */
+      gap: 1rem; /* Adjust gap between buttons */
+      margin-top: 2rem; /* Adjust margin for smaller screens */
+    }
+  
+    .getStarted {
+      padding: 0 1rem; /* Adjust padding for smaller screens */
+    }
+  
+    .getStarted .lightBtn {
+      margin-left: auto; /* Move the button to the right */
+      margin-right: auto; /* Move the button to the left */
+      display: block; /* Ensure button takes full width */
+      margin-top: 2rem; /* Adjust margin for smaller screens */
+    }
+  
+    .testimonialHeading {
+      margin-bottom: 3rem; /* Adjust margin for smaller screens */
+    }
+  
+    .testimonials-list {
+      grid-template-columns: 1fr; /* Change to single column layout */
+      gap: 1rem; /* Adjust gap between testimonials */
+      margin-top: 2rem; /* Adjust margin for smaller screens */
+      margin-bottom: 4rem; /* Adjust margin for smaller screens */
+    }
+  }
+  
