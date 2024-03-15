@@ -1,5 +1,94 @@
+
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Inter Regular'), local('Inter-Regular'),
+         url('https://fonts.gstatic.com/s/inter/v4/RG9s5dQeJ8kzIc7fU00.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Inter Bold'), local('Inter-Bold'),
+         url('https://fonts.gstatic.com/s/inter/v4/XoXq0827VO_8aMNsTcTYMUv3n1rPyo2h.ttf') format('truetype');
+  }
+  
+  /* Import the Lexend font family */
+  @font-face {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Lexend Regular'), local('Lexend-Regular'),
+         url('https://fonts.gstatic.com/s/lexend/v7/Z9XVDmdMWRiN1_T9PWsuAaZ_5tx5bTpYRQ.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Lexend Bold'), local('Lexend-Bold'),
+         url('https://fonts.gstatic.com/s/lexend/v7/Z9XaDmdMWRiN1_T9PWsuAaZ_5uW3x9lRROzvHw.ttf') format('truetype');
+  }
 *{
     padding:0px;
-    margin: 0px;
+    margin-inline: 10px;
     box-sizing: border-box;
+}
+body {
+    font-family: 'Inter', sans-serif; /* Fallback to sans-serif if Inter is not available */
+  }
+  
+  /* Apply Lexend font to headings */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lexend', sans-serif; /* Fallback to sans-serif if Lexend is not available */
+  }
+a {
+    text-decoration: none; 
+    color: inherit; 
+    padding-inline: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 5px;
+    font-size: 15px;
+    transition: background-color 0.3s ease; 
+  }
+  
+  a:hover {
+    background-color: #f6f1f1;
+  }
+.blueBtn{
+    background-color: #2563EB; 
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    cursor: pointer;
+    border-radius: 40px;
+    font-weight: 600;
+    font-size: 15px;
+}
+.blueBtn:hover {
+    opacity: 0.9; 
+  }
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+   
+}
+.leftNav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+
+}
+
+
+.rightNav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
