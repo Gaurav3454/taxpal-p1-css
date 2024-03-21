@@ -220,6 +220,9 @@ ul{
 
 /* get stared section */
 .getStarted{
+  display: flex; /* Use Flexbox for centering */
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center;
     position: relative;
     margin-top: 4.5rem;
     background-image: url('images/background-call-to.jpg'); /* Replace 'your-image-url.jpg' with the URL of your image */
@@ -231,6 +234,7 @@ ul{
 }
 .getStarted p{
     color: white;
+   
 }
 .getStarted .lightBtn{
     background-color: white; 
@@ -240,7 +244,7 @@ ul{
     cursor: pointer;
     border-radius: 40px;
     margin-top: 40px;
-margin-left: 54rem;
+
     font-size: 15px;
 
 }
@@ -501,7 +505,7 @@ font-size: 16px;
   font-size: 30px;
 }
 .main p{
-  font-size: 10px;
+  font-size: 13px;
 }
 .main h1 img{
   position: absolute;
@@ -537,11 +541,40 @@ font-size: 16px;
   order: -1;
 
 }
+.faq{
+  overflow: hidden;
+}
+.faq h2{
+  padding-top: 50px;
+  font-size: 30px;
+  margin:0px 10px;
+}
+.faq p{
+  
+  font-size: 13px;
+  margin: 10px;
+}
+.faq .question {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 10px;
+}
 
-
-
-
-
+.footer-A ul{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+.footer-b .footer-ba {
+  display: flex;
+  gap: 0rem;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  max-width: 75rem;
+  margin-top: 20px;
+}
 
 
 
