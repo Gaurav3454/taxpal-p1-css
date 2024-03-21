@@ -85,14 +85,14 @@ a {
 header{
     padding: 0 20rem;
 }
-nav{
+.nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 30px;
    
 }
-main{
+.main{
     display: flex;
     justify-content: center;
     margin-top: 7.5rem;
@@ -487,7 +487,65 @@ footer{
   header {
       padding: 0 1rem; /* Adjust padding for smaller screens */
   }
-  
+  .menu{
+    display: none;
+  }
+  .rightNav a{
+          display:none;
+  }
+.rightNav .blueBtn{
+font-size: 16px;
+}
+
+.main h1{
+  font-size: 30px;
+}
+.main p{
+  font-size: 10px;
+}
+.main h1 img{
+  position: absolute;
+  top: 10px;
+  left: 5px;
+}
+.heroBtn{
+  margin-top: 3rem;
+}
+.lowerHero{
+  margin-top: 3rem;
+}
+.lowerHero p{
+ font-size: 13px;
+}
+.lowerHero ul{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
+.section-A{
+  height: 45rem;
+}
+.section-A li{
+  font-size: 14px;
+}
+.section-A h3 {
+  margin-left: 15px;
+}
+.order{
+ 
+  order: -1;
+
+}
+
+
+
+
+
+
+
+
+
   /* Adjustments for main content */
   main {
       margin-top: 5rem; /* Adjust margin for smaller screens */
@@ -510,7 +568,7 @@ footer{
   }
   
   /* Adjustments for buttons */
-  .blueBtn, .darkBtn, .lightBtn {
+ .darkBtn, .lightBtn {
       font-size: 0.875rem; /* Adjust font size for smaller screens */
       padding: 8px 16px; /* Adjust padding for smaller screens */
   }
