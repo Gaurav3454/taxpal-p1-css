@@ -577,7 +577,9 @@ font-size: 16px;
   max-width: 75rem;
   margin-top: 20px;
 }
-
+.hide{
+  display: none;
+}
 
 
 
